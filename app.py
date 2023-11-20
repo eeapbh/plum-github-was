@@ -15,7 +15,6 @@ def login():
     if request.method == 'POST':
         args = request.args
         data = args.to_dict()
-
         user_id = data['user_id']
         user_pw = data['user_pw']
         print(user_id)
